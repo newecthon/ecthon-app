@@ -5,14 +5,21 @@ const theme = extendTheme({
     styles: {
         global: {
             body: {
-                bg: 'bggray',
+                bg: '--gray900',
             }
         }
     },
     // colors
     colors: {
-        bggray: '#161616',
-        cardbg: '#282828'
+        '--gray900': '#161616',
+        '--gray800': '#1A1A1A',
+        '--gray400': '#282828',
+        '--gray300': '#83868A',
+        '--white800': '#F2F2F2',
+    },
+    // border
+    borders: {
+        '--border-gray': '1px solid #282828',
     },
     // external fonts
     fonts: {
