@@ -1,6 +1,5 @@
 import { Link } from "@chakra-ui/next-js";
 import { Flex } from "@chakra-ui/react";
-import { useState } from "react";
 
 export function Header() {
     const pages = [
@@ -8,7 +7,6 @@ export function Header() {
         "About",
         "Contato"
     ]
-    const [selectedTab, setSelectedTab] = useState(pages[0])
 
     return (
         <Flex
