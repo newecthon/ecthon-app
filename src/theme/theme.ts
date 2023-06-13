@@ -13,6 +13,7 @@ const theme = extendTheme({
     colors: {
         '--gray900': '#161616',
         '--gray800': '#1A1A1A',
+        '--gray700': '#1C1C1C',
         '--gray400': '#282828',
         '--gray300': '#83868A',
         '--white800': '#F2F2F2',
@@ -20,6 +21,7 @@ const theme = extendTheme({
     // border
     borders: {
         '--border-gray': '1px solid #282828',
+        '--border-transparent': '1px solid transparent'
     },
     // external fonts
     fonts: {
