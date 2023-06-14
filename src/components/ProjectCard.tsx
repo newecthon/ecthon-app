@@ -22,14 +22,13 @@ export function ProjectCard() {
             position='relative'
             alignItems='center'
             justifyContent='center'
-            // bg='--gray900'
             border='--border-gray'
             borderRadius='10px'
             overflow='hidden'
             cursor='pointer'
             onMouseEnter={handleHeightMouseEnter}
             onMouseLeave={handleHeightMouseLeave}
-            bg='#282828'
+            bg='--gray400'
         >
             <Flex
                 height={height}
@@ -40,7 +39,7 @@ export function ProjectCard() {
                 left='0'
                 right='0'
                 padding='2rem'
-                bg= '#161616'
+                bg= '--gray900'
                 overflow='hidden'
                 transition='0.7s'
                 p='20px'
@@ -58,7 +57,7 @@ export function ProjectCard() {
                     <Flex
                         align='center'
                         gap='8px'
-                        color="#83868A"
+                        color='--gray300'
                     >
                         <Text fontSize='14px'>Personal</Text>
                         <Divider width="4px" height="4px"/>
@@ -78,13 +77,13 @@ export function ProjectCard() {
                         border='1px solid transparent'
                         borderRadius='8px'
                         mt='8px'
-                        color='#83868A'
+                        color='--gray300'
                         transition='0.2s'
                         _hover={{
                             textDecor: 'none',
                             color: '#FFF',
-                            border: '1px solid #282828',
-                            background: '#1C1C1C'
+                            border: '--border-gray',
+                            background: '--gray700'
                         }}
                     >
                         Detalhes
@@ -97,13 +96,13 @@ export function ProjectCard() {
                         border='1px solid transparent'
                         borderRadius='8px'
                         mt='8px'
-                        color='#83868A'
+                        color='--gray300'
                         transition='0.2s'
                         _hover={{
                             textDecor: 'none',
                             color: '#FFF',
-                            border: '1px solid #282828',
-                            background: '#1C1C1C'
+                            border: '--border-gray',
+                            background: '--gray700'
                         }}
                     >
                         Online ⚡
