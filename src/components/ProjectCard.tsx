@@ -3,6 +3,17 @@ import { useState } from "react";
 import { Divider } from "./Divider";
 
 export function ProjectCard() {
+
+    const [height, setHeight] = useState('90px');
+
+    const handleHeightMouseEnter = () => {
+        setHeight('150px')
+    }
+
+    const handleHeightMouseLeave = () => {
+        setHeight('90px')
+    }
+    
     return (
         <Box
             display='flex'
@@ -16,10 +27,12 @@ export function ProjectCard() {
             borderRadius='10px'
             overflow='hidden'
             cursor='pointer'
+            onMouseEnter={handleHeightMouseEnter}
+            onMouseLeave={handleHeightMouseLeave}
             bg='#282828'
         >
             <Flex
-                height='90px'
+                height={height}
                 display='flex'
                 direction='column'
                 position='absolute'
@@ -31,10 +44,6 @@ export function ProjectCard() {
                 overflow='hidden'
                 transition='0.7s'
                 p='20px'
-
-                _hover={{
-                    height: '150px'
-                }}
             >
                 <Flex
                     flexDirection='column'
