@@ -1,5 +1,6 @@
 import { Bai_Jamjuree } from 'next/font/google'
 import { Providers } from './providers'
+import '@/styles/global.css'
 
 const bai_jamjuree = Bai_Jamjuree({
   weight: '400',
