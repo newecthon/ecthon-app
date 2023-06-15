@@ -1,4 +1,4 @@
-import { Box, Flex, Link, StepStatus, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, StepStatus, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { Divider } from "./Divider";
 
@@ -18,7 +18,7 @@ export function ProjectCard() {
         <Box
             display='flex'
             w='352px'
-            h='382px'
+            h='320px'
             position='relative'
             alignItems='center'
             justifyContent='center'
@@ -30,6 +30,13 @@ export function ProjectCard() {
             onMouseLeave={handleHeightMouseLeave}
             bg='--gray400'
         >
+            <Flex>
+                    <Image
+                        height='100%' 
+                        src='https://framerusercontent.com/images/dp309a0U6x1c5QhqV5RpaE3Ug.webp'
+                        filter={ height=== '150px' ? 'blur("5px")' : ""}
+                    />
+                </Flex>
             <Flex
                 height={height}
                 display='flex'

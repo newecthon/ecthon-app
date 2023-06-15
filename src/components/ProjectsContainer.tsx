@@ -18,7 +18,15 @@ export function Projects() {
                 </Text>
                 <ArrowDownRight color='#fff' size={32} />
             </Flex>
-            <ProjectCard />
+
+            <Flex
+                flexWrap='wrap'
+                gap='32px'
+            >
+                <ProjectCard />
+                <ProjectCard />
+                <ProjectCard />
+            </Flex>
         </Box>
     )
 }
